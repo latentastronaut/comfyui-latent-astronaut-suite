@@ -16,6 +16,10 @@ from .nodes.string_list import NODE_DISPLAY_NAME_MAPPINGS as STRING_LIST_NAMES
 from .nodes.lora_selector import NODE_CLASS_MAPPINGS as LORA_SELECTOR_MAPPINGS
 from .nodes.lora_selector import NODE_DISPLAY_NAME_MAPPINGS as LORA_SELECTOR_NAMES
 
+# Image utilities
+from .nodes.image_resize import NODE_CLASS_MAPPINGS as IMAGE_RESIZE_MAPPINGS
+from .nodes.image_resize import NODE_DISPLAY_NAME_MAPPINGS as IMAGE_RESIZE_NAMES
+
 # Combine all node mappings
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
@@ -31,6 +35,10 @@ NODE_DISPLAY_NAME_MAPPINGS.update(STRING_LIST_NAMES)
 # LoRA selector
 NODE_CLASS_MAPPINGS.update(LORA_SELECTOR_MAPPINGS)
 NODE_DISPLAY_NAME_MAPPINGS.update(LORA_SELECTOR_NAMES)
+
+# Image utilities
+NODE_CLASS_MAPPINGS.update(IMAGE_RESIZE_MAPPINGS)
+NODE_DISPLAY_NAME_MAPPINGS.update(IMAGE_RESIZE_NAMES)
 
 # Web directory for JavaScript extensions
 WEB_DIRECTORY = "./js"
