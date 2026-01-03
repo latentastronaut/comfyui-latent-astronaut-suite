@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-latent-astronaut-suite"
 description = "ComfyUI nodes for batch processing, loops, and iteration workflows"
-version = "1.0.0"
+version = "1.0.1"
 license = { file = "LICENSE" }
 classifiers = [
     "Operating System :: OS Independent",
@@ -16,4 +16,4 @@ Documentation = "https://github.com/latentastronaut/comfyui-latent-astronaut-sui
 [tool.comfy]
 PublisherId = "latent-astronaut"
 DisplayName = "Latent Astronaut Suite"
-Icon = "assets/latent_astronaut_logo_512.png"
+Icon = "https://raw.githubusercontent.com/latentastronaut/comfyui-latent-astronaut-suite/main/assets/latent_astronaut_logo_512.png"
