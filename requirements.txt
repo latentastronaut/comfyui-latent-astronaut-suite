@@ -1,0 +1,4 @@
+# ComfyUI VAE Explorer
+# Most dependencies are already provided by ComfyUI
+# torch - provided by ComfyUI
+# numpy - provided by ComfyUI

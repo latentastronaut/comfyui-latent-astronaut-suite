@@ -1,0 +1,42 @@
+"""
+ComfyUI Latent Astronaut Suite - Custom nodes for ComfyUI.
+
+Provides loop nodes, string list utilities, and LoRA selector.
+"""
+
+# Loop nodes
+from .nodes.for_loop import NODE_CLASS_MAPPINGS as FOR_LOOP_MAPPINGS
+from .nodes.for_loop import NODE_DISPLAY_NAME_MAPPINGS as FOR_LOOP_NAMES
+
+# String list utilities
+from .nodes.string_list import NODE_CLASS_MAPPINGS as STRING_LIST_MAPPINGS
+from .nodes.string_list import NODE_DISPLAY_NAME_MAPPINGS as STRING_LIST_NAMES
+
+# LoRA selector
+from .nodes.lora_selector import NODE_CLASS_MAPPINGS as LORA_SELECTOR_MAPPINGS
+from .nodes.lora_selector import NODE_DISPLAY_NAME_MAPPINGS as LORA_SELECTOR_NAMES
+
+# Combine all node mappings
+NODE_CLASS_MAPPINGS = {}
+NODE_DISPLAY_NAME_MAPPINGS = {}
+
+# Loop nodes
+NODE_CLASS_MAPPINGS.update(FOR_LOOP_MAPPINGS)
+NODE_DISPLAY_NAME_MAPPINGS.update(FOR_LOOP_NAMES)
+
+# String list utilities
+NODE_CLASS_MAPPINGS.update(STRING_LIST_MAPPINGS)
+NODE_DISPLAY_NAME_MAPPINGS.update(STRING_LIST_NAMES)
+
+# LoRA selector
+NODE_CLASS_MAPPINGS.update(LORA_SELECTOR_MAPPINGS)
+NODE_DISPLAY_NAME_MAPPINGS.update(LORA_SELECTOR_NAMES)
+
+# Web directory for JavaScript extensions
+WEB_DIRECTORY = "./js"
+
+__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS", "WEB_DIRECTORY"]
+
+# Version info
+__version__ = "0.1.0"
+__author__ = "Latent Astronaut"
