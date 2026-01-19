@@ -20,6 +20,24 @@ from .nodes.lora_selector import NODE_DISPLAY_NAME_MAPPINGS as LORA_SELECTOR_NAM
 from .nodes.image_resize import NODE_CLASS_MAPPINGS as IMAGE_RESIZE_MAPPINGS
 from .nodes.image_resize import NODE_DISPLAY_NAME_MAPPINGS as IMAGE_RESIZE_NAMES
 
+# LLM nodes
+from .nodes.llm_config import NODE_CLASS_MAPPINGS as LLM_CONFIG_MAPPINGS
+from .nodes.llm_config import NODE_DISPLAY_NAME_MAPPINGS as LLM_CONFIG_NAMES
+from .nodes.llm_prompt import NODE_CLASS_MAPPINGS as LLM_PROMPT_MAPPINGS
+from .nodes.llm_prompt import NODE_DISPLAY_NAME_MAPPINGS as LLM_PROMPT_NAMES
+
+# Image batch utilities
+from .nodes.image_batch_utils import NODE_CLASS_MAPPINGS as IMAGE_BATCH_MAPPINGS
+from .nodes.image_batch_utils import NODE_DISPLAY_NAME_MAPPINGS as IMAGE_BATCH_NAMES
+
+# ChatterBox TTS/VC nodes
+from .nodes.chatterbox_nodes import NODE_CLASS_MAPPINGS as CHATTERBOX_MAPPINGS
+from .nodes.chatterbox_nodes import NODE_DISPLAY_NAME_MAPPINGS as CHATTERBOX_NAMES
+
+# Size selector
+from .nodes.size_selector import NODE_CLASS_MAPPINGS as SIZE_SELECTOR_MAPPINGS
+from .nodes.size_selector import NODE_DISPLAY_NAME_MAPPINGS as SIZE_SELECTOR_NAMES
+
 # Combine all node mappings
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
@@ -39,6 +57,24 @@ NODE_DISPLAY_NAME_MAPPINGS.update(LORA_SELECTOR_NAMES)
 # Image utilities
 NODE_CLASS_MAPPINGS.update(IMAGE_RESIZE_MAPPINGS)
 NODE_DISPLAY_NAME_MAPPINGS.update(IMAGE_RESIZE_NAMES)
+
+# LLM nodes
+NODE_CLASS_MAPPINGS.update(LLM_CONFIG_MAPPINGS)
+NODE_DISPLAY_NAME_MAPPINGS.update(LLM_CONFIG_NAMES)
+NODE_CLASS_MAPPINGS.update(LLM_PROMPT_MAPPINGS)
+NODE_DISPLAY_NAME_MAPPINGS.update(LLM_PROMPT_NAMES)
+
+# Image batch utilities
+NODE_CLASS_MAPPINGS.update(IMAGE_BATCH_MAPPINGS)
+NODE_DISPLAY_NAME_MAPPINGS.update(IMAGE_BATCH_NAMES)
+
+# ChatterBox TTS/VC nodes
+NODE_CLASS_MAPPINGS.update(CHATTERBOX_MAPPINGS)
+NODE_DISPLAY_NAME_MAPPINGS.update(CHATTERBOX_NAMES)
+
+# Size selector
+NODE_CLASS_MAPPINGS.update(SIZE_SELECTOR_MAPPINGS)
+NODE_DISPLAY_NAME_MAPPINGS.update(SIZE_SELECTOR_NAMES)
 
 # Web directory for JavaScript extensions
 WEB_DIRECTORY = "./js"

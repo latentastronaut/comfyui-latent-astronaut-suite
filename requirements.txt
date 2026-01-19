@@ -1,4 +1,14 @@
-# ComfyUI VAE Explorer
+# Latent Astronaut Suite
 # Most dependencies are already provided by ComfyUI
 # torch - provided by ComfyUI
 # numpy - provided by ComfyUI
+
+# LLM nodes
+openai>=1.0.0
+google-genai>=1.0.0
+
+# ChatterBox TTS/VC nodes
+# chatterbox-tts is installed via install.py with --no-deps
+# because it has strict version pins that conflict with ComfyUI
+# Note: watermarking (resemble-perth) is skipped due to segfault issues
+librosa>=0.10.0
